@@ -307,11 +307,13 @@ a {
     width: 60%;
     padding-left: -30px;
     padding-top: 35px;
-    float: right;
-
+}
+.btnbar {
+    width: 190px;
+    padding-top: 7px;
 }
 .btns {
-    margin: 0px;
+
     line-height: 1.5rem;
 }
 .profiletext {
