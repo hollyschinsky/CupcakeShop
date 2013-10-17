@@ -1,0 +1,599 @@
+body {
+    background: #444849;
+}
+
+a {
+    display: block;
+}
+
+/*
+.status-bar {
+    position: absolute;
+    right:0;left:0;
+    height: 20px;
+    background-color: #bcbfbf;
+    display: none;
+}
+*/
+
+.logo {
+    width: 100px;
+    height: 50px;
+}
+
+.search-on {
+    top: 136px !important;
+}
+
+.switch-container {
+    height: 56px;
+    position: relative;
+}
+
+.switch-container>:first-child {
+    position:absolute !important;
+    left: 16px !important;
+    top:20px !important;
+}
+
+.welcome {
+    position: relative;
+    height: 48px;
+}
+
+.welcome>.user {
+    position: absolute;
+    left: 54px;
+    top: 18px;
+    font-size: .9rem;
+}
+
+.category-switch {
+    position: absolute !important;
+    top: 8px;
+    right: 12px !important;
+}
+
+.topcoat-list--dark {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.topcoat-list__header--dark {
+  margin: 0;
+}
+
+.topcoat-list__container--dark {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.topcoat-list__item--dark {
+  margin: 0;
+  padding: 0;
+}
+
+.topcoat-list--dark {
+  border-top: 1px solid #2f3234;
+  border-bottom: 1px solid #5e6061;
+  /*background-color: #444849;*/
+}
+
+.topcoat-list__header--dark {
+  padding: 4px 20px;
+  font-size: 0.9em;
+  font-weight: 400;
+  background-color: #3b3e40;
+  color: #868888;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+  border-top: solid 1px rgba(255,255,255,0.1);
+  border-bottom: solid 1px rgba(255,255,255,0.05);
+}
+
+.topcoat-list__container--dark {
+  border-top: 1px solid #2f3234;
+  color: #c6c8c8;
+}
+
+.topcoat-list__item--dark {
+  padding: 0.75rem;
+  border-top: 1px solid #5e6061;
+  border-bottom: 1px solid #2f3234;
+}
+
+.topcoat-list__item--dark:first-child {
+  border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.topcoat-list--dark li:active {
+    background-color: #404141;
+}
+
+#container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+#content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    background: #DFE2E2;
+}
+
+#content.center {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#content.offset {
+    -webkit-transform: translate3d(250px, 0, 0);
+    transform: translate3d(250px, 0, 0);
+    /*opacity: .4;*/
+    box-shadow: 0px 0px 0px 2px #444;
+}
+
+#content.transition {
+    -webkit-transition-duration: .25s;
+    transition-duration: .25s;
+}
+
+#menu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 250px;
+    /*background: #595b5b;*/
+    color: #c6c8c8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.search-bar {
+    padding:8px 14px 12px 8px;
+    display: none;
+}
+
+.search-key {
+    width: 100%;
+}
+
+.product-list li p:nth-of-type(2) {
+    color: #57b6b8;
+}
+
+.feed-item-list li p:nth-of-type(1) {
+    color: #57B6B8;
+    font-weight: 400;
+}
+
+.feed-item-list p {
+  margin: 0;
+  padding: 0;
+    overflow: hidden;
+}
+
+.feed-item-list li {
+  padding: 0.65rem;
+  min-height: 40px;
+}
+
+.feed-item-list > li img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-top: 0px;
+    margin-right: 8px;
+}
+
+.small-pic {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.large-pic-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: none;
+    background: rgba(0,0,0,.8);
+}
+
+.large-pic {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-size: contain;
+    display: none;
+}
+
+.page-body {
+    padding: 14px 10px;
+}
+
+.page-body h1 {
+    margin: 0px;
+    font: inherit;
+    color: inherit;
+    background: transparent;
+    border: none;
+    overflow: hidden;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.page-body h2 {
+    margin: 0px;
+    font: inherit;
+    color: inherit;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.page-body h3 {
+    margin: 0px;
+}
+
+.action-button {
+    display: block;
+    margin: 4px 0px;
+    text-align: center;
+}
+
+.scroller {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 70px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.hscroller {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    position: absolute;
+    top: 80px;
+    height: 200px;
+    left: 10px;
+    right: 10px;
+    white-space: nowrap;
+}
+
+.profilecontent {
+    width: 100%;
+    padding: 3px;
+}
+.profileinfo {
+    width: 40%;
+    float: left;
+}
+.followerinfo {
+    width: 60%;
+    padding-left: -30px;
+    padding-top: 35px;
+    float: right;
+
+}
+.btns {
+    margin: 0px;
+    line-height: 1.5rem;
+}
+.profiletext {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.topcoat-icon--back {
+    background: url("images/back_light.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.topcoat-icon--search {
+    background: url("images/search.svg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.topcoat-list__container {
+    border-bottom: none;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.topcoat-list,
+.topcoat-list--dark {
+    list-style: none;
+}
+
+.product-list li {
+    position: relative;
+    text-align: left;
+    clear: both;
+    padding: 8px 60px 8px 8px !important;
+    height: 60px;
+}
+
+.product-list > li p:nth-of-type(1) {
+    margin: 0px;
+    /*padding-top: 4px;*/
+    /*font-weight: bold;*/
+}
+
+.product-list > li p:nth-of-type(2) {
+    margin: 0px;
+    color: #57B6B8;
+}
+
+.product-list > li p:nth-of-type(3) {
+    margin: 0px;
+}
+
+.product-list > li img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 0px;
+    margin-right: 8px;
+}
+
+.product-list li:active {
+    background-color: #d3d7d7;;
+}
+
+ul {
+    clear:both;
+    border-top: none !important;
+}
+
+.icon-facebook {
+    background: transparent url(images/facebook.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.icon-twitter {
+    background: transparent url(images/twitter.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.icon-camera {
+    background: transparent url(images/camera.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.chevron {
+    background: transparent url(images/next_blue.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 12px;
+    top: 22px;
+    height: 50px;
+    width: 28px;
+}
+
+#map {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+h3 {
+    clear: both;
+    padding-top: 12px;
+}
+
+.price {
+    color: green !important;
+    padding-bottom: 14px;
+    font-weight: 400;
+}
+
+/**
+*
+* Copyright 2012 Adobe Systems Inc.;
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+*/
+.switch,
+.topcoat-switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.switch__input,
+.topcoat-switch__input {
+  position: absolute;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  opacity: 0.001;
+  z-index: 1;
+  vertical-align: top;
+  outline: none;
+}
+.switch__toggle,
+.topcoat-switch__toggle {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.switch__toggle:before,
+.switch__toggle:after,
+.topcoat-switch__toggle:before,
+.topcoat-switch__toggle:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.switch--disabled,
+.topcoat-switch__input:disabled + .topcoat-switch__toggle {
+  opacity: 0.3;
+  cursor: default;
+  pointer-events: none;
+}
+
+
+.topcoat-switch {
+  font-size: 16px;
+  padding: 0 1.25rem;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #303233;
+  overflow: hidden;
+  width: 6rem;
+}
+.topcoat-switch__toggle:before,
+.topcoat-switch__toggle:after {
+  top: -1px;
+  width: 5rem;
+}
+.topcoat-switch__toggle:before {
+  content: 'ON';
+  color: #e182ba;
+  background-color: #404141;
+  right: 1rem;
+  padding-left: 1.5rem;
+}
+.topcoat-switch__toggle {
+  line-height: 3rem;
+  height: 3rem;
+  width: 2rem;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  color: #c6c8c8;
+  text-shadow: 0 -1px rgba(0,0,0,0.69);
+  background-color: #595b5b;
+  border: 1px solid #303233;
+  margin-left: -1.3rem;
+  margin-bottom: -1px;
+  margin-top: -1px;
+  -webkit-box-shadow: inset 0 1px #727373;
+  box-shadow: inset 0 1px #727373;
+  -webkit-transition: margin-left 0.05s ease-in-out;
+  -moz-transition: margin-left 0.05s ease-in-out;
+  -o-transition: margin-left 0.05s ease-in-out;
+  -ms-transition: margin-left 0.05s ease-in-out;
+  transition: margin-left 0.05s ease-in-out;
+}
+.topcoat-switch__toggle:after {
+  content: 'OFF';
+  background-color: #404141;
+  left: 1rem;
+  padding-left: 2rem;
+}
+.topcoat-switch__input:checked + .topcoat-switch__toggle {
+  margin-left: 2.7rem;
+}
+.topcoat-switch__input:focus + .topcoat-switch__toggle {
+  border: 0px solid rgba(0,0,0,0);
+  -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,0);
+  box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
+.topcoat-switch__input:disabled + .topcoat-switch__toggle:after,
+.topcoat-switch__input:disabled + .topcoat-switch__toggle:before {
+  background: transparent;
+}
