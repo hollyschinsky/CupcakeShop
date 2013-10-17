@@ -295,23 +295,20 @@ a {
     white-space: nowrap;
 }
 
-.profilecontent {
-    width: 100%;
-    padding: 3px;
-}
 .profileinfo {
     width: 40%;
     float: left;
 }
 .followerinfo {
     width: 60%;
-    padding-left: -30px;
-    padding-top: 35px;
-    float: right;
 
 }
+.btnbar {
+    width: 190px;
+    padding-top: 17px;
+}
 .btns {
-    margin: 0px;
+
     line-height: 1.5rem;
 }
 .profiletext {
@@ -443,7 +440,7 @@ ul {
 
 h3 {
     clear: both;
-    padding-top: 12px;
+    /*padding-top: 12px;*/
 }
 
 .price {
