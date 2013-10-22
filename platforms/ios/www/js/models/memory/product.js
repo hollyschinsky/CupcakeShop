@@ -149,7 +149,7 @@ define(function (require) {
                 ]
             },
             {   "id": 9,
-                "name": "Pink and White Star Vanilla",
+                "name": "Pink White Star Vanilla",
                 "type": "V",
                 "category": "Vanilla",
                 "price": "$3.00",
@@ -229,7 +229,7 @@ define(function (require) {
                 ]
             },
             {   "id": 15,
-                "name": "Chocolate Peanut Butter Chunk",
+                "name": "Chocolate Peanut Butter",
                 "type": "S",
                 "category": "Specialty",
                 "price": "$4.00",

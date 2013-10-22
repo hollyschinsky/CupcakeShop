@@ -37,8 +37,7 @@ require(['jquery', 'backbone', "fastclick", 'app/views/Menu', 'app/router'], fun
     document.addEventListener('deviceready', function () {
         console.log(window.device.version);
         if (parseFloat(window.device.version) >= 7.0) {
-            document.getElementById('container').style.top = "20px";
-//            document.getElementById('status-bar').style.display = "static";
+            document.getElementById('container').style.top = "19px";
         }
     });
 
@@ -47,7 +46,6 @@ require(['jquery', 'backbone', "fastclick", 'app/views/Menu', 'app/router'], fun
     });
 
     $("body").on("click", ".back-button", function (event) {
-        console.log("Back!");
         event.preventDefault();
         window.history.back();
     });

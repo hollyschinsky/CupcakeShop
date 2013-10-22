@@ -1,24 +1,21 @@
 body {
-    background: #444849;
+    background: #E6E9E8; /* Picked up by iOS Status Bar */
+    /*background-color: #444849; REMOVED for menu*/
 }
 
 a {
     display: block;
 }
 
-/*
-.status-bar {
-    position: absolute;
-    right:0;left:0;
-    height: 20px;
-    background-color: #bcbfbf;
-    display: none;
+.title {
+    font-family: lobster, sans-serif;
 }
-*/
+.title>.title1 {
+    color: #57B6B8;
+}
+.title >.title2 {
+    color:  #e182ba
 
-.logo {
-    width: 100px;
-    height: 50px;
 }
 
 .search-on {
@@ -45,7 +42,9 @@ a {
     position: absolute;
     left: 54px;
     top: 18px;
-    font-size: .9rem;
+    font-size: 1.0rem;
+    color: #c6c8c8;
+    font-weight: bold;
 }
 
 .category-switch {
@@ -120,10 +119,9 @@ a {
   border-top: 1px solid rgba(0,0,0,0.05);
 }
 
-.topcoat-list--dark li:active {
+.menu-list li:active {
     background-color: #404141;
 }
-
 #container {
     position: absolute;
     top: 0px;
@@ -142,6 +140,7 @@ a {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     background: #DFE2E2;
+    z-index: 10; /* Needed because of switch component hack where setting z-index for text to show due to topcoat bug*/
 }
 
 #content.center {
@@ -168,9 +167,13 @@ a {
     right: 0px;
     bottom: 0px;
     width: 250px;
+    /* Added*/
+    background: #444849;
     /*background: #595b5b;*/
-    /*color: #c6c8c8;*/
-    color: #e182ba;
+    /*color: #e182ba;*/
+}
+.topcoat-icon-button--quiet {
+    overflow: inherit;
 }
 
 a {
@@ -356,6 +359,9 @@ a {
     list-style: none;
 }
 
+.product-list {
+    background-color: #FFFFFF;
+}
 .product-list li {
     position: relative;
     text-align: left;
@@ -366,8 +372,7 @@ a {
 
 .product-list > li p:nth-of-type(1) {
     margin: 0px;
-    /*padding-top: 4px;*/
-    /*font-weight: bold;*/
+    font-weight: bold;
 }
 
 .product-list > li p:nth-of-type(2) {
@@ -481,6 +486,9 @@ h3 {
     -webkit-background-clip: padding;
     -moz-background-clip: padding;
     background-clip: padding-box;
+    /* Added */
+    color: #e182ba;
+    z-index: 1; /* NEED THIS RUNNING IN BROWSER - NOT IN iPHONE :/ TIL THEY FIX SWITCH COMPONENT */
 }
 .switch__input,
 .topcoat-switch__input {
@@ -546,6 +554,7 @@ h3 {
     border: 1px solid #303233;
     overflow: hidden;
     width: 6rem;
+    pointer-events:auto;
 }
 .topcoat-switch__toggle:before,
 .topcoat-switch__toggle:after {
